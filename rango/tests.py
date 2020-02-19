@@ -1,3 +1,5 @@
+from django.test import TestCase
+
 #
 # Tango with Django 2 Progress Tests
 # By Leif Azzopardi and David Maxwell
@@ -201,3 +203,4 @@ class Chapter3AboutPageTests(TestCase):
 
         self.assertTrue(single_quotes_check or double_quotes_check,
                         f"{FAILURE_HEADER}We could not find a hyperlink back to the index page in your about view. Check your about.html template, and try again.{FAILURE_FOOTER}")
+

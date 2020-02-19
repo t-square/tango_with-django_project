@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+     About Rango
+{% endblock %}
+
+{% block body_block %}
+    <div>
+        Rango says here is the about page. <br />
+        This tutorial has been put together by Ting Ting van Abbema.<br />
+        <strong>{{ boldmessage }}</strong><br />
+    </div>
+    <div>
+        <br />
+        <p>Visits: {{ visits }}</p>
+        <br />
+        <img src="/static/images/rango.jpg" alt="Picture of Rango" />
+        <hr />
+        <br />
+        <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat" />
+    </div>
+{% endblock %}
